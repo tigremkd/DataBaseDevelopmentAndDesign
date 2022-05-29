@@ -18,14 +18,12 @@ WHERE Gender = 'm'
 GO
 
 SELECT * FROM Employees
-WHERE YEAR(hiredate)  LIKE '2008%'
+WHERE HireDate BETWEEN '1998-01-01' AND '1998-01-31'
 GO
 
 SELECT * FROM Employees
-WHERE YEAR(HireDate)  LIKE '2008%'
-AND LastName LIKE 'n%'
+WHERE LastName LIKE 'A%' AND HireDate BETWEEN '1998-01-01' AND '1998-01-31'
 GO
-
 
 
 
